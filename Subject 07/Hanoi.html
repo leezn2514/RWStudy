@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+
+<style>
+    #background {width: 1092px; height: 450px;}
+
+    #red, #green, #blue {width: 300px; height: 450px; float: left; margin-left: 60px; text-align: center;}
+    #red {border: 2px solid red;}
+    #green {border: 2px solid green;}
+    #blue {border: 2px solid blue;}
+    
+    .squares {width: 15px; height: 15px; margin: 2px; border: 1px solid black; display: inline-block; margin-top: 15px;} 
+
+    .allFloor {text-align: center; visibility: visible;}
+</style>
+    
+<body>
+    <p>하노이의 탑</p>
+    <button onclick="Reset()">초기화</button>
+    <p></p>
+    <div id="background">
+        <div id="red" onclick="firstClick()">
+            <div>first</div>
+            <div class="allFloor">
+                <div class="floor"></div>
+                <div class="floor"></div>
+                <div class="floor"></div>
+                <div class="floor"></div>
+                <div class="floor"></div>
+                <div class="floor"></div>
+            </div>
+        </div>
+        <div id="green" onclick="secondClick()">second
+            <div class="allFloor">
+                <div class="sfloor"></div>
+                <div class="sfloor"></div>
+                <div class="sfloor"></div>
+                <div class="sfloor"></div>
+                <div class="sfloor"></div>
+                <div class="sfloor"></div>
+            </div>
+        </div>
+        <div id="blue" onclick="thirdClick()">third
+            <div class="allFloor">
+                <div class="tfloor"></div>
+                <div class="tfloor"></div>
+                <div class="tfloor"></div>
+                <div class="tfloor"></div>
+                <div class="tfloor"></div>
+                <div class="tfloor"></div>
+            </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>
